@@ -1,7 +1,11 @@
+On the sweet's index page, we should see a list of sweet's names (we've already done this part for you). 
+When a user clicks on a sweet's name, it should take a user to the sweet's show page.
+
+
 <h1>All Sweets</h1>
 
 <ul>
   <% @sweets.each do |sweet| %>
-    <li><%= sweet.name %></li>
+    <li><%= link_to sweet.name, sweet_path(sweet) %></li>
   <% end  %>
 </ul>

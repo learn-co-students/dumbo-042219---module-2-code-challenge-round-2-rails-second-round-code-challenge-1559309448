@@ -1,0 +1,7 @@
+Vendor name: <%= @vendor.name %>
+
+Sweets vendor sell: 
+<% @vendor.sweets.each do |sweet| %>
+<%= sweet.name %>
+<br>
+<% end  %>
